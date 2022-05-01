@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+   
+  }
+
+body{
+    background-color: #B2E0FA;
+    margin: 0;
+    height: 99%;
+    position: fixed;
+    
+}
+
+.e4_4 { 
+    z-index: 1;
+    position: fixed;
+	box-shadow:0px 4px 5px rgba(106.2499974668026, 101.82291582226753, 101.82291582226753, 0.25);
+	background-color:rgba(128.20390462875366, 170.38036465644836, 209.31249797344208, 1);
+	width: 100%;
+	height:80px;
+
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+}
+
+#hud{
+    height: 90%;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%) translateX(-50%);
+    left: 50%;
+}
+
+.e4_8 { 
+	color:rgba(172.12500303983688, 172.12500303983688, 172.12500303983688, 1);
+	width:236px;
+	height:45px;
+	font-family:Copperplate Gothic Bold;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+    margin: 40px 40px;
+    position: absolute;
+    
+}
+
+#buttons{
+    
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+#grid{
+    height: 90%;
+    top: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+#center-grid{
+    width: 100%;
+    left: 2.5%;
+    right: 2.5%;
+    height: 100%;
+    margin: auto;
+
+}
+
+
+.container {
+    display: grid; 
+    grid-template-columns: 250px 250px 250px 250px 250px; 
+    grid-auto-rows: 350px;
+    gap: 30px 15px; 
+
+
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content: center;
+    overflow-y: auto;
+    height: inherit;
+
+
+  }
+
+  .c{
+      background-color: rgb(230, 255, 132);
+      width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.3s;
+  }
+  .c:hover{
+      background-color: rgb(202, 225, 113);
+      transition: ease-in-out 0.3s;
+      transform: scale(1.05);
+  }
+
+.infos{
+   
+    width: 250px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 100%;
+    transform: translateY(650%);
+    
+}
+
+
+#add{
+    background-color: rgb(165, 165, 165);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+   
+    
+    margin: 45px 92%;
+    
+}
+
+#l1{
+    width: 10%;
+    height: 80%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+vertical-align: middle;
+top: 50%;
+transform: translateY(10%);
+    background-color: rgb(119, 119, 119);
+}
+
+#l2{
+    width: 98%;
+    height: 10%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+vertical-align: middle;
+top: 50%;
+transform: translateY(-390%);
+    background-color: rgb(119, 119, 119);
+}
+
+#add:hover{
+    background-color: rgb(136, 136, 136);
+    
+}
+
+#add:hover #l1{
+    background-color: rgb(74, 74, 74);
+    
+}
+
+#add:hover #l2{
+    background-color: rgb(74, 74, 74);
+    
+}
+
+#tt{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(177, 177, 177);
+}
+
+#tt:hover{
+    background-color: rgb(109, 108, 108);
+}
+
+
+.container::-webkit-scrollbar {
+    display: initial;
+  }
+.container::-webkit-scrollbar-track {
+    background: rgba(128.20390462875366, 170.38036465644836, 209.31249797344208, 1);
+    border-radius: 30px;
+  }
+
+.container::-webkit-scrollbar-thumb {
+    background: rgb(230, 255, 132);
+    border-radius: 30px;
+  }
+
+  .modal-container{
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height:  100%;
+      z-index: 100;
+  }
+
+  .modal-container.active{
+      display: block;
+  }
+
+  .overlay {
+      position: absolute;
+      width: 100%;
+        height: 100%;
+        background: #333333d3;
+
+       
+  }
+
+  .modal{
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    height: 700px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    top: 52%;
+    left: 50%;
+    position: absolute;
+
+  }
+
+  .close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+    cursor: pointer;
+  }
